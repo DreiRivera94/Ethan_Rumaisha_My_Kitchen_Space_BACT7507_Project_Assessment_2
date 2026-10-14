@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Kitchen Canvas | My Kitchen Space</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">⌂</span><span>My Kitchen Space</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="products.html">Browse Kitchen Products</a>
+      <a class="active" href="canvas.html">My Kitchen Canvas</a>
+      <a class="" href="gallery.html">My Kitchen Gallery</a>
+      <a class="" href="wishlist.html">My Kitchen Wishlist</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="container page-header">
+  <span class="eyebrow">YOUR DESIGN WORKSPACE</span>
+  <h1>My kitchen canvas</h1>
+  <p>Arrange your kitchen concept in one place. This is the static layout view; canvas interactions can be added later.</p>
+  <div class="canvas-toolbar">
+    <div class="canvas-toolbar-left"><span class="pill green">Untitled kitchen</span><span class="small-muted">Last saved: Not yet saved</span></div>
+    <div class="canvas-toolbar-right"><a class="button secondary small" href="gallery.html">Save as new design</a><a class="button small" href="gallery.html">Save design</a></div>
+  </div>
+</section>
+<section class="container" style="padding-bottom:65px">
+  <div class="canvas-workspace">
+    <aside class="canvas-sidebar">
+      <div class="tool-section" style="margin-top:0;padding-top:0;border-top:0">
+        <span class="eyebrow">PRODUCT LIBRARY</span><h3>Add items to your canvas</h3>
+        <div class="canvas-product"><img src="assets/images/base-cabinet.svg" alt=""><div><strong>Base Cabinet</strong><span>Furniture · $249</span></div></div>
+        <div class="canvas-product"><img src="assets/images/island.svg" alt=""><div><strong>Kitchen Island</strong><span>Furniture · $449</span></div></div>
+        <div class="canvas-product"><img src="assets/images/oven.svg" alt=""><div><strong>Built-in Oven</strong><span>Appliances · $699</span></div></div>
+        <div class="canvas-product"><img src="assets/images/sink.svg" alt=""><div><strong>Kitchen Sink</strong><span>Fixtures · $199</span></div></div>
+        <div class="canvas-product"><img src="assets/images/pendant.svg" alt=""><div><strong>Pendant Light</strong><span>Lighting · $89</span></div></div>
+      </div>
+      <div class="tool-section">
+        <span class="eyebrow">OBJECT SETTINGS</span>
+        <div class="setting-row"><span>Selected item</span><strong>Base Cabinet</strong></div>
+        <div class="setting-row"><span>Width</span><strong>150 cm</strong></div>
+        <div class="setting-row"><span>Height</span><strong>90 cm</strong></div>
+        <div class="setting-row"><span>Rotation</span><strong>0°</strong></div>
+        <div style="display:flex;gap:8px;margin-top:10px"><span class="button secondary small">Rotate ↻</span><span class="button secondary small">Delete</span></div>
+      </div>
+      <div class="canvas-note">Plan enough room between cabinets and appliances for comfortable movement.</div>
+    </aside>
+    <div class="canvas-area">
+      <div class="canvas-area-top"><span>Room view · 900 × 600</span><span>Zoom 100%</span></div>
+      <div class="canvas-stage" aria-label="Static illustration of kitchen canvas">
+        <div class="stage-wall"></div><div class="stage-floor"></div><div class="stage-counter"></div>
+        <div class="stage-cabinet"></div><div class="stage-cabinet b"></div><div class="stage-cabinet c"></div>
+        <div class="stage-appliance"></div><div class="stage-sink"></div>
+        <span class="stage-label">KITCHEN CANVAS</span>
+        <div class="selection-outline"><i class="selection-dot tl"></i><i class="selection-dot tr"></i><i class="selection-dot bl"></i><i class="selection-dot br"></i></div>
+      </div>
+      <div class="canvas-note">Static HTML/CSS mockup. Dragging, resizing, rotation, and saving are not active yet.</div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>My Kitchen Space</strong><br>Plan a kitchen that feels like home.</div>
+    <div>HTML &amp; CSS prototype</div>
+  </div>
+</footer>
+</body>
+</html>
