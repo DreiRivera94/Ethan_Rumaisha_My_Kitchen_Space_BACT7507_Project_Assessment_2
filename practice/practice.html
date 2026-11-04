@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Kitchen Space</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="practice.css">
+
+    <!-- Load the Konva.js library -->
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+
+    <!-- Connect the JavaScript file -->
+    <script src="practice.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Kitchen Space</h1>
+    </header>
+
+    <main class="workspace">
+
+        <!-- Sidebar containing kitchen products -->
+        <aside class="sidebar">
+            <h2>Kitchen Products</h2>
+
+            <div class="product" draggable="true" data-item="Cabinet">
+                <div class="product-preview cabinet">
+                </div>
+                <span>Cabinet</span>
+            </div>
+
+            <div class="product" draggable="true" data-item="Sink">
+                <div class="product-preview sink"></div>
+                <span>Sink</span>
+            </div>
+
+            <div class="product" draggable="true" data-item="Oven">
+                <div class="product-preview oven"></div>
+                <span>Oven</span>
+            </div>
+
+            <div class="product" draggable="true" data-item="Fridge">
+                <div class="product-preview fridge"></div>
+                <span>Fridge</span>
+            </div>
+        </aside>
+
+        <section class="canvas-section">
+            <h2>Kitchen Canvas</h2>
+
+            <p id="status">Drag a product onto the canvas.</p>
+
+            <div id="stage-container"></div>
+
+            <!-- Delete the selected product -->
+            <button id="delete-button" disabled>
+                Delete Selected Item
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>

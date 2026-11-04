@@ -1,0 +1,155 @@
+
+/* Apply consistent sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ee;
+    color: #333333;
+}
+
+/* Page heading */
+header {
+    padding: 24px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    color: #51483e;
+}
+
+header p {
+    margin: 0;
+    color: #666666;
+}
+
+/* Main layout */
+.workspace {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    align-items: flex-start;
+}
+
+/* Kitchen product sidebar */
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.sidebar h2,
+.canvas-section h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.sidebar p,
+.canvas-section p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Draggable product cards */
+.product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #faf9f6;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    cursor: grab;
+    user-select: none;
+}
+
+.product:hover {
+    background-color: #f1ece5;
+}
+
+/* Product previews */
+.product-preview {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.cabinet {
+    background-color: #d7c4a8;
+}
+
+.sink {
+    background-color: #b9d6dc;
+    border-radius: 50%;
+}
+
+.oven {
+    background-color: #777777;
+}
+
+.fridge {
+    background-color: #e4e4e4;
+}
+
+/* Canvas section */
+.canvas-section {
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Konva canvas container */
+#stage-container {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    background-color: #fffdf9;
+    border: 1px solid #eeeeee;
+}
+
+/* Delete button */
+#delete-button {
+    margin-top: 16px;
+    padding: 10px 16px;
+    background-color: #a33d35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#delete-button:hover:not(:disabled) {
+    background-color: #812d27;
+}
+
+#delete-button:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+/* Layout for smaller screens */
+@media (max-width: 700px) {
+    .workspace {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .canvas-section {
+        width: 100%;
+    }
+}
